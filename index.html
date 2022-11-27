@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Page</title>
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <style>
+      body {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(62, 5, 74);
+      }
+
+      button {
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        background-color: rgb(75, 156, 138);
+        border-radius: 5px;
+      }
+
+      .hide {
+        display: none;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 45%;
+        height: 10rem;
+        flex-direction: column;
+        background-image: repeating-linear-gradient(
+          #443f74,
+          #3a6642,
+          #593053,
+          #632663
+        );
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="load">Text Loading...</p>
+      <button onclick="Hide()">LOADED</button>
+      <i class="fa-sharp fa-solid fa-loader"></i>
+    </div>
+
+    <script>
+      const hidden = document.getElementById("load");
+
+      function Hide() {
+        hidden.classList.add("hide");
+      }
+    </script>
+    <!-- custom script -->
+    <script></script>
+  </body>
+</html>
